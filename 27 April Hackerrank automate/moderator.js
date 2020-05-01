@@ -28,7 +28,11 @@ let uToAdd = process.argv[3];
             let loginBtn = await driver.findElement(swd.By.css("button[data-analytics=LoginPassword]"));
             await loginBtn.click();
             console.log("Login Success");
-
+            let adminLinkanchor = await driver.findElement(swd.By.css("a[data-analytics=NavBarProfileDropDownAdministration]"))
+            let adminPageUrl = await adminLinkanchor.getAttribute("href");
+            await driver.get(adminPageUrl);
+            let manageTabs = await driver.findElements(swd.By.css(".administration header ul li"));
+            await manageTabs[1].click();
         } catch (err) {
             console.log(err);
         }
