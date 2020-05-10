@@ -1,33 +1,93 @@
 let puppeteer = require("puppeteer");
 let cFile = process.argv[2];
+console.log(cFile);
 let fs = require("fs");
-
+console.log(require('./credentials.json'));
+// let pUrl = process.argv[3];
+// let nPost = process.argv[4];
 (async function () {
-    // browser open => visible
-    let browser = await puppeteer.launch({
-        headless: false,
-        defaultViewport: null,
-        args: [ "--start-maximized"]
-        // "--incognito",
-    });
+    // browser create => icognito mode,fullscreen
+    try {
+        let data = await fs.promises.readFile(cFile);
+        console.log(data)
+        let { url, user, pwd } = JSON.parse(data);
+        // [1];
+        console.log(pwd)
+        // launch browser
+        let browser = await puppeteer.launch({
+            headless: false,
+            defaultViewport: null,
+            args: ["--start-maximized", "--disable-notifications"]
+        });
+        // tab
+        let tabs = await browser.pages();
+        let tab = tabs[0];
+        // dom => html 
+        //  browser=> 500ms request 
+        // hk login page
+        await tab.goto(url, { waitUntil: "networkidle2" });
+        await tab.waitForSelector("input[type=email]");
+        await tab.type("input[type=email]", user, { delay: 120 });
+        // const googleLoginButtonSelector = 'body > section > ... > div'
+        // await tab.waitForSelector( googleLoginButtonSelector )
+        // await page.click( googleLoginButtonSelector )
+        await tab.click('#identifierNext');
+        // await tab.type("input[type=password]", pwd, { delay: 120 });
+        //  _1xnd => group of post 
+        // _4-u2 _4-u8=> particular post
+        //  inside ._1xnd
+        // descendent => select 
+        // 1xnd => last
+        await Promise.all([
+            tab.click("button[jsname=Njthtb]"), tab.waitForNavigation({
+                waitUntil: "networkidle2"
+            })
+        ])
+        await tab.goto(pUrl, { waitUntil: "networkidle2" });
+        await tab.waitForSelector("div[data-key=tab_posts]");
+        //  post => click => reroute=> 2 times=> 2 times (wait for navigation)
+        await Promise.all([
+            tab.click("div[data-key=tab_posts]"),
+            tab.waitForNavigation({ waitUntil: "networkidle2" })
+        ])
+        await tab.waitForNavigation({ waitUntil: "networkidle2" });
 
-    let pages = await browser.pages()
-    let page = pages[0]
-    await page.goto("https://accounts.google.com/ServiceLogin/signinchooser?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin")
-})();
+        let idx = 0;
+        do {
+            //  post => 7 post => are loaded 
+            await tab.waitForSelector("#pagelet_timeline_main_column ._1xnd .clearfix.uiMorePager");
+            // children selector
 
-let data = await fs.promises.readFile(cFile);
-let {url,pwd, user}= JSON.parse(data);
-// Login Page => NOrmal websites 
-// spa => Socket maintain -> networkidle2
-await page.goto(url,{waitUntil:"networkidle0"});
-// Let unInputWillBeFoundPromise=page.$("#input-1");
-// Let psInputWillBeFoundPromise=page.$("#input-2");
-// Let unNpsEL = await Promise.all([unInputWillBeFoundPromise, psInputWillBeFoundPromise])
-await page.type("#input-1", user);
-await page.type("#input-type", pwd);
-await page.click("button[data-analytics-LoginPassword]");
+            let elements = await tab.$$("#pagelet_timeline_main_column ._1xnd > ._4-u2._4-u8")
+            // saftey
+            // console.log(elements.length);
+            let post = elements[idx];
+            // like -> selector
+            await tab.waitForSelector("._666k ._8c74");
+            let like = await post.$("._666k ._8c74");
+            await like.click({ delay: 100 });
+            idx++;
+            await tab.waitForSelector(".uiMorePagerLoader", { hidden: true })
+            //  wait for loader => visible => content load =>
+            // hidden=> may post => wait for loader 
+            //  loader  hide wait 
+            // immediate child
+            //  descendent 
+        } while (idx < nPost)
+        // await browser.close();
+    } catch (err) {
+        console.log(err)
+    }
+})()
 
-// ***### Dashboard ###***
-await page.waitforNavigation({waitUntil:"networkidle0"});
-await page.waitforSelector("a[]")
+
+// div class="1xnd"
+//     div 
+//       ul
+//         li
+//           div class="_4-u2 4-u8"
+
+
+
+// div class="1xnd"
+//   div class="_4-u2 4-u8"
