@@ -1,18 +1,18 @@
 let puppeteer = require("puppeteer");
 let cFile = process.argv[2];
-console.log(cFile);
+// console.log(cFile);
 let fs = require("fs");
-console.log(require('./credentials.json'));
-// let pUrl = process.argv[3];
+// console.log(require('./credentials.json'));
+let course = process.argv[3];
 // let nPost = process.argv[4];
 (async function () {
     // browser create => icognito mode,fullscreen
     try {
         let data = await fs.promises.readFile(cFile);
-        console.log(data)
+        // console.log(data)
         let { url, user, pwd } = JSON.parse(data);
         // [1];
-        console.log(pwd)
+        // console.log(pwd)
         // launch browser
         let browser = await puppeteer.launch({
             headless: false,
@@ -25,24 +25,39 @@ console.log(require('./credentials.json'));
         // dom => html 
         //  browser=> 500ms request 
         // hk login page
+        // ***********************Login*************************
         await tab.goto(url, { waitUntil: "networkidle2" });
+        // await tab.click("button[data-purpose=header-login]");
         await tab.waitForSelector("input[type=email]");
         await tab.type("input[type=email]", user, { delay: 120 });
         // const googleLoginButtonSelector = 'body > section > ... > div'
         // await tab.waitForSelector( googleLoginButtonSelector )
         // await page.click( googleLoginButtonSelector )
-        await tab.click('#identifierNext');
-        // await tab.type("input[type=password]", pwd, { delay: 120 });
+
+        await tab.type("input[type=password]", pwd, { delay: 120 });
         //  _1xnd => group of post 
         // _4-u2 _4-u8=> particular post
         //  inside ._1xnd
         // descendent => select 
         // 1xnd => last
         await Promise.all([
-            tab.click("button[jsname=Njthtb]"), tab.waitForNavigation({
+            tab.click("input[data-purpose=do-login]"), tab.waitForNavigation({
                 waitUntil: "networkidle2"
             })
-        ])
+        ]);
+
+        // ***********************Search Courses*************************
+
+        await tab.waitForSelector("input[data-purpose=search-input]");
+        await tab.type("input[data-purpose=search-input]", course, { delay: 120 });
+
+        await Promise(
+            tab.click("button[type=submit]"), tab.waitForNavigation({
+                waitUntil: "networkidle2"
+            })
+        );
+
+
         await tab.goto(pUrl, { waitUntil: "networkidle2" });
         await tab.waitForSelector("div[data-key=tab_posts]");
         //  post => click => reroute=> 2 times=> 2 times (wait for navigation)
