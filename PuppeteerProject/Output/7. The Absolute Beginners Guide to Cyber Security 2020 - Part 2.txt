@@ -1,0 +1,131 @@
+
+The Absolute Beginners Guide to Cyber Security 2020 - Part 2
+Current price₹360
+DescriptionDescription
+
+** PART 2 OF THE BEST SELLING CYBER SECURITY GUIDE FOR BEGINNERS SERIES **
+
+Take your basic knowledge of cyber security to a whole new level with this exciting course that promises to be educational, informative and fun filled. 
+
+Build upon a basic foundation in Cyber Security with a strong focus on the following core topics.
+
+Networking
+
+Privacy & Anonymity
+
+Malware
+
+Email Security
+
+Backups & Encryption
+
+Windows 10 Hardening
+
+What are the main benefits of taking this course?
+
+I am glad you asked. This course has been designed to provide you with the knowledge and tools to not only better protect yourself against malware but to also prepare you for a career in the cyber security field if you so wish. 
+
+You will learn all the latest techniques used in the world of cyber security today and understand how a lot security technologies work behind the scenes.
+
+In this course you will learn the following practical skills
+
+How to use a proxy server
+
+How to setup and use a virtual private network
+
+How to use Tor to access the dark web anonymously
+
+Best practices to browse the internet securely and privately
+
+How to set up a firewall
+
+How to use a rootkit scanner
+
+How to encrypt your emails
+
+How to track emails you have sent and also how to detect if you are being tracked
+
+How to use 3 major anti-malware software products
+
+How to completely harden the Windows 10 operating system
+
+How to backup and encrypt your hard drive
+
+How to choose the right anti virus
+
+and much much much more
+
+You will also learn how to use a wide variety of software to improve your security game and these include:
+
+Virtual Private Networks
+
+Kaspersky Antivirus
+
+Bitlocker
+
+Proxy servers
+
+Bleachbit
+
+Tor
+
+CCleaner
+
+Protonmail
+
+Duckduck go
+
+Brave Browser
+
+Ugly Email
+
+Mail Tracker
+
+Nord VPN
+
+GMER Rootkit scanner
+
+Secure Boot
+
+Veracrypt
+
+Filevault
+
+Guerrilla Mail
+
+Comodo Firewall
+
+Lastpass
+
+ Jobs in Cyber security are plentiful and this course will help prepare you for entry level roles by providing you with a solid set of skills to build up on.
+
+* PERFECT FOR BEGINNERS *
+
+You don't need to have a background in cyber security though any sort of prior knowledge would be beneficial. This course is designed in such a manner that as long as you know how to use a computer and the internet, you will be able to understand and apply everything you are taught.
+
+Content and Overview   Suitable for non professionals and students with a basic understanding of cyber security. In this course of nearly 100 lectures and almost 7 hours of content, you’ll learn all of the core cyber security fundamentals and develop a strong understanding of how security and privacy can either be maintained or deprived from a user. Each chapter closes with a section review highlighting the core points raised in the section.
+
+Starting with Networking 101, you will learn the basics of networking including what the TCP/IP protocol suite is and how the domain name system works.
+
+With the basics of networking mastered, you will be ready to jump into the course proper with the following section where you will begin to learn about privacy and anonymity. You will learn how advertisers and websites are able to track you online and what you can do about it.
+
+You will then move on to a more advanced section where you will be introduced to Anonymizers. You will learn how to work with proxy servers and how to setup and configure a Virtual Private Network. We will also explore how to use Tor to access the dark web as well as the pros and cons of using anonymizers. By the end of this section, you would have learned techniques and skills that you can use to secure your privacy online.
+
+Section 5 covers malware with a special focus on viruses, rootkits and ransomware. You will learn how these various forms of malware can affect you plus you will also be introduced to a variety of anti-malware software that you can use to fight against malware.
+
+We will then move to discuss about backups and encryption. You will learn about cloud backups as well the advantages and disadvantages of using this type of technology. I will then show you how you can back up and encrypt your hard drive and sensitive files.
+
+Section 7 covers one of the most interesting aspects of cyber security - Social Engineering. You will learn about the different tactics employed by social engineers to extract important information without using any technical skills. We will explore how hackers exploit human psychology and fool their targets.
+
+Email security will be covered in the very next section. Emails are a fundamental component of our daily lives and you will learn exactly how emails are sent and received behind the scenes. You will learn how to track emails and how to use mail services like guerrilla mail and proton mail.
+
+In the final section of the course, you will learn how to harden the Windows 10 operating system against malware. Windows 10 by default is vulnerable to malware but with a few adjustments, you can make it far more secure and you will learn this tricks in this section.
+
+Complete with resources and section reviews, you’ll be able to apply what you have learnt in this course either at home or at your place of work and will receive a verifiable certificate of completion upon finishing the course.
+
+Take control of your privacy and security - Enroll Today in one of the very best cyber security courses you will find online.
+
+Who this course is for:
+Anyone who wants to begin a career as a cyber security professional
+Students who want to learn practical techniques on how to protect their privacy online
+Students who want to have a deeper understanding of many of the major topics in cyber security

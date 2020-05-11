@@ -1,0 +1,68 @@
+
+The Absolute Beginners Guide to Cyber Security 2020 - Part 1
+Current price₹360
+DescriptionDescription
+
+** PART 1 OF THE BEST SELLING CYBER SECURITY GUIDE FOR BEGINNERS SERIES **
+
+Have you ever wondered exactly how hackers 'hack'? Do words like firewalls, encryption, bio-metrics and malware sound confusing to you? Have you been looking for a course that teaches you all the basics of both information and cyber security in a fun relaxed manner? If so then you are going to find this course absolutely perfect for you.
+
+This is a course that is perfect as an introductory one for individuals and students who are interested in becoming cyber security or information security professionals. It is also ideal for students who just want to have a well rounded knowledge about the basic concepts used in the world of information security.
+
+** UDEMY BEST SELLING COURSE **
+
+Over 4000 happy students have enrolled in this best seller course which has an average rating of 4.5 due to stellar reviews.
+
+'An expert with great teaching style: provided clear explanations and concise definitions. Topics were reinforced and made tangible using graphics and real life (or movie) examples. The quizzes helped me retain and feel confident about the material.'  - E. Wolfe
+
+"Great intro to Cyber Security. I currently work in IT and I'm considering transitioning to InfoSec. This course was very informative and it has me motivated to continue exploring and learning more about the field of Cyber Security and InfoSec. I am even going to recommend this to my wife who works in IT management as it would be very useful in helping her understand the different concepts. The instructor is good. Speaks clearly and provides good examples." - Chris Loyola
+
+PERFECT FOR COMPLETE BEGINNERS
+
+This course is intended primarily for students who have little to no prior background or knowledge about the field of cyber security. 
+
+Course Curriculum
+
+In the very first section, we will cover the basic terminologies used and discuss topics like the trinity of IT security and computer protocols.
+
+In section 2, we will explore the world of hackers and the hacking methodology. We will take a look at the different types of hackers and how they actually hack.
+
+Section 3 will introduce you to the various ways how cyber criminals and hackers attack systems and networks. You will learn about the most popular forms of attacks such as 
+
+Phishing
+
+Brute Force Attack
+
+DoS & DDoS Attacks
+
+Bots and Botnets
+
+and much more
+
+We will then move on to cover everything about malware. You will learn the various forms of malware such as viruses, worms and trojans and how they differ from one another.
+
+In section 4, you will learn about the methods employed by cyber security professionals to protect systems and networks from cyber attacks. You will learn how the following work
+
+Antivirus
+
+Firewalls
+
+Encryption
+
+Biometrics
+
+Authentication Methods
+
+and much more
+
+Finally we will cover and discuss about other topics related to both information and cyber security such as the BYOD policy and cyber warfare.
+
+By the end of this course, you would have gained a lot of knowledge and insights that can help to jump start your career as an information security professional. 
+
+What are you waiting for??? Enroll in this best selling course today.
+
+Alex.
+
+Who this course is for:
+Students who want to learn the basics of computer and cyber security
+Students who want to become IT or Cyber Security Experts

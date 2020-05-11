@@ -1,0 +1,39 @@
+
+The Complete Cyber Security Course : Network Security!
+Current price₹360
+DescriptionDescription
+
+Become a cyber security specialist.
+
+
+After this course, you will be able to discover security vulnerabilities across an entire network, by using network hacking techniques and vulnerability scanning.
+
+You will be able to architect your network for maximum security and prevent local and remote attacks. We also cover the use of custom router firmware to provide you with better network security services.
+
+You will understand the various types of firewalls that are available and what threats each help mitigate.
+
+Including layer 4 firewalls like Iptables on Linux and PF on MacOS and BSD. Virtual firewalls, host-based firewalls and application based firewalls like Pfsence. We cover firewalls on all platforms including Windows, Mac OS X and Linux for all types of use scenarios.
+
+We explore in detail wireless security, the configurations that are required for maximum security and why. How Wi-Fi is hacked and how to mitigate those attacks. Covering everything from encryption weaknesses to evil twins, RF isolation, and Wi-Fi crackers.
+
+You will master network monitoring to discover and identify potential hackers, malware and other adversaries that might be lurking on your network. Using tools like Wireshark, Tcpdump and Syslog.
+
+We then move away from network security and onto the details of how we are tracked online by corporations, nation-states your ISP and others. You will understand the techniques used like zombie super cookies, browser fingerprinting and how browser profiling works so third parties can establish who you are online.
+
+We look at search engine privacy - and how to mitigate the tracking and privacy issues of search engines and their associated services.
+
+Browser security - We cover one of the largest risks online, the browser. The doorway into your system. How to best reduce the attack surface of the browser and harden it for maximum security and privacy. A critical consideration for reducing your risk.
+
+Finally you will fully understand how to best use methods of authentication including passwords and multi-factor authentication - soft tokens and hard tokens. 
+
+The best password managers to use and why. How passwords are cracked, and how to mitigate the cracking.
+
+This is volume 2 of 4 of your complete guide to cyber security privacy and anonymity.  
+
+Who this course is for:
+This course is for anyone who wants to become an expert in security, privacy, and anonymity. This volume covers network security attacking and defending. Online tracking and browser security.
+For anyone who would love to gain a practical skillset in mitigating the risk from, malware, Trojans, hackers, trackers, cyber criminals and all online threats.
+This course is for anyone who wants to keep their precious files, emails, accounts and personal information out of the hands of the bad guys.
+For beginners and intermediate Internet users who are interested in security, safety, and privacy.
+For those who want privacy and anonymity online from hackers, corporations and governments.
+This course is designed for personal and home Internet security, privacy, and anonymity. Most of the topics apply in the same way to a business, but the course is delivered as if to an individual for personal cybers security, privacy, and anonymity.

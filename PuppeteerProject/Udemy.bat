@@ -1,2 +1,2 @@
 cls
-node index.js "./credentials.json" "Flutter"
+node index.js "./credentials.json" "Cyber Security"

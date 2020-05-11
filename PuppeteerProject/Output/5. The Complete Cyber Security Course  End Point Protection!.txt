@@ -1,0 +1,39 @@
+
+The Complete Cyber Security Course : End Point Protection!
+Current price₹360
+DescriptionDescription
+
+Learn a practical skill-set in securing laptops, desktops and mobile devices from all types of threats, including, advanced hackers, trackers, exploit kits, thieves and much more.
+
+
+On this course we cover end-point-protection, which is an extremely important and hot topic in cyber security right now!
+
+
+Become a cyber security specialist - Go from a beginner to advanced in this easy to follow expert course.  
+
+Covering all the major platforms Windows, MacOS, Linux, iOS and Android.
+
+
+Master the selection and implementation of solid disk encryption technology to protect devices from disk decryption attacks.
+
+Understand the current and next generation anti-virus solutions, how they work, how to select the best products and how to implement them successfully. 
+
+Covering traditional end-point-protection technologies through to next generation and future technology; application control, execution prevention, machine learning and Artificial Intelligence.
+
+Learn how we can detect and monitor for threats such as malware and hackers through the use of security through deception and detection technologies.
+
+We have fun learning how to seek and destroy system resident malware and hackers. Get up to speed on your hacker hunting!
+
+Learn how to perform operating system hardening to decrease the attacker surfaces of your devices to make them safer. 
+
+Explore the best techniques in anti-forensics to securely delete data and meta-data so that it is unrecoverable by even computer forensics experts.
+
+Plus there is more. We end by looking the extremely important topic of email and messenger security.  Email has natively poor security, but in this course, I teach you how to overcome those weaknesses and fully secure your communication.
+
+This is volume 4 of 4 of your complete guide to cybersecurity, privacy, and anonymity. 
+
+Who this course is for:
+This course is for anyone who wants to become an expert in security, privacy, and anonymity.
+The ideal student for this course is technically minded with an interest in how hackers hacker, how trackers track and what you can do to stop them.
+For those who want privacy and anonymity online from hackers, corporations and governments.
+For those interesting in the latest trends in cyber security and protection of end-points.

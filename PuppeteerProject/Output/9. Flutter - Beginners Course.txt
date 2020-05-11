@@ -1,9 +1,0 @@
-
-Flutter - Beginners Course
-Current price₹360
-DescriptionDescription
-
-Learn how to create fast and stunning mobile applications using Flutter, a new mobile framework by google. In this course you will quickly learn how to build an application in Flutter with no previous experience. It is HIGHLY recommended you understand the Dart programming language, see my Dart programming tutorials.
-
-Who this course is for:
-Anyone interested in learning Flutter mobile development

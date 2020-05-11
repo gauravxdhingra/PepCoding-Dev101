@@ -1,0 +1,42 @@
+
+The Complete Cyber Security Course : Anonymous Browsing!
+Current price₹360
+DescriptionDescription
+
+Learn a practical skill-set in staying anonymous online and maintaining total privacy against even a well-resourced adversary with global influence.
+
+Covering all major platforms including Windows, MacOS, Linux. iOS and Android. Plus Tails, Whonix, and others.
+
+Become a cyber security specialist. - Go from beginner to expert in this easy to follow advanced course.
+
+We cover in detail all the best anonymising and privacy methods. Including;
+
+
+Tor
+VPNs - Virtual Private Networks
+Proxy servers - HTTP, HTTPS, SOCKs and Web
+SSH Secure Shell
+Live Operating Systems - Tails, Knoppix, Puppy Linux, Jondo live, Tiny Core Linux
+OPSEC - Operation Security
+I2P - The Invisible Internet Project
+JonDoNym
+Off-site connections - Hotspots and Cafes
+Mobile, Cell Phones & Cellular Networks
+Bulletproof hosting 
+and more....
+
+For each of these anonymizing methods we analysis in detail their strengths and weaknesses, we look at the techniques used to attack these anonymity services and what you can do to mitigate those de-anonymization attacks.
+
+Advanced anonymity: We explore chaining and nesting anonymizing services together to provide layers of obfuscation for maximum anonymity against even the most well-resourced adversaries.
+
+We cover bypassing censors, firewalls, and proxies. Learn to bypass the trickiest of censoring devices including DPI (deep packet inspection).
+
+The course covers both the theory and practically how setup everything we discuss.   
+
+This is volume 3 of 4 of your complete guide to cyber security privacy and anonymity.  
+
+Who this course is for:
+This course is for anyone who wants to become an expert in security, privacy and anonymity.
+For those who want privacy and anonymity online from hackers, corporations and governments.
+For beginners and intermediate Internet users who are interested in security, privacy and anonymity.
+This course is designed for personal and home Internet security, privacy and anonymity. Most of the topics apply in the same way to a business, but the course is delivered as if to an individual for personal Internet security, privacy and anonymity.
