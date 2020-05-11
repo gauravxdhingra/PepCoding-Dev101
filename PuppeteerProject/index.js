@@ -1,3 +1,4 @@
+var pdf = require('html-pdf');
 let puppeteer = require("puppeteer");
 let cFile = process.argv[2];
 // console.log(cFile);
@@ -30,7 +31,7 @@ let course = process.argv[3];
         // await tab.click("button[data-purpose=header-login]");
 
         // let bodyHTML = await tab.evaluate(() => document.);
-        let bodyHTML =  await tab.content();
+        let bodyHTML = await tab.content();
         console.log(bodyHTML)
 
 
@@ -164,9 +165,18 @@ async function handleSingleQuestion(newTab, link, i) {
     // await newTab.pdf({ path: './PDFOutput/' + x +'. '+ title+'.pdf' , format: 'A4' });
     await newTab.screenshot({ path: './PDFOutput/' + x + ' ' + title + '.png', fullPage: true });
 
-    let bodyHTML = await newTab.evaluate(() => document.body.innerHTML);
-console.log(bodyHTML)
-    await newTab.waitForSelector(".wishlist--wishlist--2riVP.wishlist-button--style-inverse--22PW4.wishlist-button--wishlist-btn--3Xy6s.wishlist-button--active--2i1GY.btn.btn-link");
+    // let bodyHTML = await newTab.evaluate(() => document.body.innerHTML);
+    let bodyHTML= await newTab.content();
+    // console.log(bodyHTML);
+
+    // var options = { format: 'Letter' };
+    // pdf.create(bodyHTML, options).toFile('./PDFOutput/' + x + '. ' + title + '.pdf', function (err, res) {
+    //     if (err) return console.log(err);
+    //     console.log(res); // { filename: '/app/businesscard.pdf' }
+    // });
+   await fs.writeFileSync('./PDFOutput/' + x + '. ' + title + '.html', bodyHTML);
+
+    // await newTab.waitForSelector(".wishlist--wishlist--2riVP.wishlist-button--style-inverse--22PW4.wishlist-button--wishlist-btn--3Xy6s.wishlist-button--active--2i1GY.btn.btn-link");
 
     await newTab.close();
 }
