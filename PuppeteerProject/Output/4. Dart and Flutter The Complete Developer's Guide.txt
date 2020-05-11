@@ -1,0 +1,41 @@
+
+Dart and Flutter: The Complete Developer's Guide
+Current price₹360
+DescriptionDescription
+
+If you're tired of spinning your wheels learning Swift or Android, this is the course for you.
+
+
+Animations? You will learn it.  Architectural Patterns? Included.  Navigation? Of course!
+
+Flutter is a newcomer to the mobile development scene.  Strongly supported by Google, it is already viewed as an ideal platform for replacing native Swift and Android development.  Thanks to its amazing standard library of widgets, fast compile times, and amazing documentation, developers are falling in love with Flutter!  
+
+This course supports MacOS and Windows - develop Android and iOS apps easily!
+
+Flutter apps are created using the language Dart.  No problem if you're not already familiar with Dart; this course includes a lightning fast introduction to Dart at the beginning, along with hours of bonus lectures at the end of the course solely focused on Dart and its advanced features.  If you come from a background working with Java, Ruby, or Javascript, you'll feel right at home with Dart - the syntax is nearly identical, only a few core concepts need to be learned.  Dart is a strongly typed language - but don't be discouraged if you're not a fan of strong types!  I spend special time in this course to make it extra clear why developing with a strongly typed language is a breeze!
+
+
+One of the greatest challenges around developing Flutter applications right now is understanding how to design and architect apps.  Flutter is still in rapid development, and the community at large is still trying to find out the best techniques.  With this in mind, special attention is paid in the course to making sure you understand the primary design patterns advocated by Google's Flutter team, including both the 'Stateful Widget' pattern and the 'BLOC' pattern.  The 'BLOC' pattern makes heavy use of Reactive Programming techniques, which you'll learn about in this course as well.  These techniques can be easily applied to other languages and frameworks as well - talk about a bonus!
+
+Of course, no mobile app is complete without some nice looking animations.  You'll learn how to build animations using Flutter's standard library of tools, which can be easily used to make interactions that your users will love.  You should plan to complete the course with knowledge of how to reference Flutter's standard library of widgets to assemble complex animations.
+
+Sign up today and you will:
+
+Understand the Dart language and its primary features
+Store information for long periods of time on the user's device with offline storage
+Learn how to optimize network requests for improved performance on mobile networks
+Delight your users with complex animations
+Expose the functionality of your apps with multi-screen navigation
+Steer through the incredible amount of Flutter documentation
+Master Reactive Programming with streams by using RxDart
+Implement advanced design patterns advocated by Google's official Flutter team
+Handle user input with form validation
+Learn to build open source Dart packages and distribute them to other developers
+
+I've built the course that I would have wanted to take when I was learning Flutter. A course that explains the concepts and how they're implemented in the best order for you to learn and deeply understand them.
+
+
+
+
+Who this course is for:
+Developers looking to build quality apps with Flutter
