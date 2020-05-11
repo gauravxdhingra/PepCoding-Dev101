@@ -1,20 +1,16 @@
-var pdf = require('html-pdf');
 let puppeteer = require("puppeteer");
 let cFile = process.argv[2];
-// console.log(cFile);
 let fs = require("fs");
-// console.log(require('./credentials.json'));
 let course = process.argv[3];
-// let nPost = process.argv[4];
+// var pdf = require('html-pdf');
+
 (async function () {
     // browser create => icognito mode,fullscreen
     try {
         let data = await fs.promises.readFile(cFile);
-        // console.log(data)
+     
         let { url, user, pwd } = JSON.parse(data);
-        // [1];
-        // console.log(pwd)
-        // launch browser
+      
         let browser = await puppeteer.launch({
             headless: false,
             defaultViewport: null,
@@ -45,16 +41,17 @@ let course = process.argv[3];
         await tab.type("input[data-purpose=search-input]", course, { delay: 120 });
 
         await tab.click("button[type=submit]")
-        await handleSinglePageQuestion(tab, browser);
+        await handleSinglePage(tab, browser);
 
     } catch (err) {
         console.log(err)
     }
 })();
 
-async function handleSinglePageQuestion(tab, browser) {
+async function handleSinglePage(tab, browser) {
     // await tab.waitForSelector(".udlite-custom-focus-visible.course-card--container--3w8Zm.course-card--large--1BVxY");
     // let qoncPage = await tab.$$(".udlite-custom-focus-visible.course-card--container--3w8Zm.course-card--large--1BVxY");
+   
     await tab.waitForSelector("a[data-purpose=container]");
     let qoncPage = await tab.$$("a[data-purpose=container]");
 
@@ -67,14 +64,14 @@ async function handleSinglePageQuestion(tab, browser) {
 
         let newTab = await browser.newPage();
         // developer tools=> elem.getAttribute
-        let mWillAddedPromisetocQ = handleSingleQuestion(newTab, "https://www.udemy.com" + href, i);
+        let mWillAddedPromisetocQ = handleSingle(newTab, "https://www.udemy.com" + href, i);
         pArr.push(mWillAddedPromisetocQ);
     }
     await Promise.all(pArr);
 
 }
 
-async function handleSingleQuestion(newTab, link, i) {
+async function handleSingle(newTab, link, i) {
     let x = i + 1;
     await newTab.goto(link);
 
