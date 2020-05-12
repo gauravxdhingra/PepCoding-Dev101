@@ -2,6 +2,8 @@ let puppeteer = require("puppeteer");
 let cFile = process.argv[2];
 let fs = require("fs");
 let memesJson = process.argv[3];
+// var https = require('https');
+let request = require('request');
 
 (async function () {
     // browser create => icognito mode,fullscreen
@@ -19,52 +21,82 @@ let memesJson = process.argv[3];
         let tabs = await browser.pages();
         let tab = tabs[0];
 
+
+
+        let memeJsonData = await fs.promises.readFile(memesJson);
+        let memesArray = JSON.parse(memeJsonData);
+        // console.log(memesArray[0].text2)
+
+
+
+
+
         // ***********************Login*************************
-        // await tab.goto(url, { waitUntil: "networkidle2" });
-        await tab.goto(url);
+        await tab.goto(url, { waitUntil: "networkidle2" });
+        // await tab.goto(url);
         // let bodyHTML = await tab.evaluate(() => document.);
         // let bodyHTML = await tab.content();
         // console.log(bodyHTML)
 
         // await tab.waitForSelector("input[placeholder='Text #1']");
-        // await tab.type('[placeholder="Text #1"]', user, { delay: 120 });
 
-        // await tab.type('[placeholder="Text #2"]', pwd, { delay: 120 });
 
-        await tab.type('[placeholder="Top Text"]', user);
 
-        await tab.type('[placeholder="Bottom Text"]', pwd);
+        for (let i = 0; i < memesArray.length; i++) {
 
-        // await tab.type('[placeholder="Text #3"]', pwd, { delay: 120 });
+            let text1 = memesArray[i].text1;
+            let text2 = memesArray[i].text2;
+            let text3 = memesArray[i].text3;
+            let templete = memesArray[i].templete;
 
-        await tab.click(".mm-generate.b.but")
+            // let templete = memesArray[4].templete;
+            templete = "\"" + templete + "\""
+            const tempclick = "[alt=" + templete + "]";
+            await tab.click(tempclick)
 
-        await tab.waitForSelector('input[class="img-code link"]');
+            await tab.type('[placeholder="Text #1"]', text1);
 
-        let memeUrl = await tab.$eval(
-            'input[class="img-code link"]',
 
-            function (elem) {
-                return elem.getAttribute("value");
+            if (text2 != '') await tab.type('[placeholder="Text #2"]', text2);
+            if (text3 != '') await tab.type('[placeholder="Text #3"]', text3);
+            // { delay: 120 }
+
+            await tab.click(".mm-generate.b.but")
+            await tab.waitForSelector('input[class="img-code link"]');
+
+            let memeUrl = await tab.$eval(
+                'input[class="img-code link"]',
+
+                function (elem) {
+                    return elem.getAttribute("value");
+                });
+
+            let n = i + 1;
+
+            memeUrl = memeUrl.substring(22);
+            memeUrl = "https://i.imgflip.com/" + memeUrl + ".jpg";
+            console.log(n + '. ' + memeUrl);
+            // await tab.goto(memeUrl, { waitUntil: "networkidle2" });
+
+            var download = function (uri, filename, callback) {
+                request.head(uri, function (err, res, body) {
+                    // console.log('content-type:', res.headers['content-type']);
+                    // console.log('content-length:', res.headers['content-length']);
+                    request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
+                });
+            };
+
+            download(memeUrl, './memes/' + n + '.jpg', function () {
+                // console.log('done');
             });
 
-        memeUrl = memeUrl.substring(22);
-        memeUrl = "https://i.imgflip.com/" + memeUrl + ".jpg";
-        console.log(memeUrl);
+            const [div] = await tab.$x("//div[@id='done-btns']/div[contains(., 'Make another')]");
 
-        // await tab.waitForSelector(".1.but")
-
-        // await tab.goto(memeUrl, { waitUntil: "networkidle2" });
-        // await tab.click('div[class="l but"]')
-
-        const [div] = await tab.$x("//div[@id='done-btns']/div[contains(., 'Make another')]");
-
-        if (div) {
-            await div.click();
+            if (div) {
+                await div.click();
+            }
         }
 
-
-        
 
 
         // ***********************Search Courses*************************

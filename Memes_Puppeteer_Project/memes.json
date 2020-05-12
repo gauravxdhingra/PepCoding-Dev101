@@ -2,55 +2,63 @@
   {
     "text1": "Doing a task manually in 5 minutes",
     "text2": "Spending 5 hours to automate the same",
-    "templete": "Drake Hotline Bling"
+    "text3": "",
+    "templete": "Drake Hotline Bling Meme"
   },
 
   {
     "text1": "Automating a task by spending 5 hours",
     "text2": "Me",
     "text3": "A task that can be manually done in 5 minutes",
-    "templete": "Distracted Boyfriend"
+    "templete": "Distracted Boyfriend Meme"
   },
 
   {
     "text1": "Doing a task manually in 5 minutes",
     "text2": "Spending 5 hours to automate the same",
-    "templete": "Two Buttons"
+    "text3": "",
+    "templete": "Two Buttons Meme"
   },
   {
     "text1": "Doing a task manually in 5 minutes",
     "text2": "Spending 5 hours to automate the same",
-    "templete": "UNO Draw 25 Cards"
+    "text3": "",
+    "templete": "UNO Draw 25 Cards Meme"
   },
   {
     "text1": "Automating a task by spending 5 hours that can be manually done in 5 minutes",
     "text2": "",
-    "templete": "Change My Mind"
+    "text3": "",
+    "templete": "Change My Mind Meme"
   },
   {
     "text1": "Doing a task manually in 5 minutes",
     "text2": "Spending 5 hours to automate the same",
-    "templete": "Batman Slapping Robin"
+    "text3": "",
+    "templete": "Batman Slapping Robin Meme"
   },
   {
     "text1": "Doing a task manually in 5 minutes",
     "text2": "Spending 5 hours to automate the same",
-    "templete": "Left Exit 12 Off Ramp"
+    "text3": "",
+    "templete": "Left Exit 12 Off Ramp Meme"
   },
   {
     "text1": "Doing a task manually in 5 minutes",
     "text2": "Spending 5 hours to automate the same",
-    "templete": "Tuxedo Winnie The Pooh"
+    "text3": "",
+    "templete": "Tuxedo Winnie The Pooh Meme"
   },
   {
     "text1": "Doing a task manually",
     "text2": "Automating the task",
     "text3": "Spent 5 hours on a task that can be manually done in 5 minutes",
-    "templete": "Panik Kalm Panik"
+    "templete": "Panik Kalm Panik Meme"
   },
   {
     "text1": "This task can be done manually in 5 minutes",
     "text2": "Me: Automating the task by spending 5 hours",
-    "templete": "Woman Yelling At Cat"
+    "text3": "",
+    "templete": "Woman Yelling At Cat Meme"
   }
 ]
