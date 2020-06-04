@@ -25,7 +25,7 @@ fs.readFile('./ingredients.json', 'utf8', (err, fileContents) => {
 
 
         // write each value of the array on the file breaking line
-        ingredients.forEach(value => writeStream.write(`${value},`));
+        ingredients.forEach(value => writeStream.write( `'${value}',` ));
 
         // the finish event is emitted when all data has been flushed from the stream
         writeStream.on('finish', () => {
