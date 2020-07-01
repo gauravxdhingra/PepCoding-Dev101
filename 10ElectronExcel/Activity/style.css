@@ -1,0 +1,35 @@
+html,
+body {
+    border: 0px;
+    margin: 0px;
+}
+
+/* ?? */
+* {
+    box-sizing: border-box;
+}
+
+.menu {
+    height: 22px;
+    border: 1px solid red;
+}
+
+.menu-options {
+    height: 50px;
+    border: 1px solid green;
+}
+
+.formula-options {
+    height: 26px;
+    border: 1px solid yellow;
+}
+
+.cell-container {
+    height: calc( 100vh - 124px );
+    border: 1px green;
+}
+
+.sheets {
+    height: 20px;
+    border: 1px solid pink;
+}
